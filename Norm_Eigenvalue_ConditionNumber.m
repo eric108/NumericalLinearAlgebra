@@ -53,7 +53,7 @@ t1 = ['Eigenvalues of a random matrix of dimension '];
 title(t1)
 
 % (3) Condition number
-End = 1000; % 2^10 , begin with 4
+End = 30; % 2^10 , begin with 4
 Start = 1;
 A3 = zeros(End-Start+1, 100); % store the 2 norm of 100 matrices with various dimension
 for i=Start:1:End
@@ -79,7 +79,7 @@ end
 
 
 %(U2)Compute the eigenvalues
-End = 8; % 2^10 , begin with 4
+End = 12; % 2^10 , begin with 4
 Start = 4;
 AU2 = zeros(End-Start+1,100,2^End); % store the 2 norm of 100 matrices with various dimension
 SRU = zeros(End-Start+1,100);
@@ -114,7 +114,7 @@ t2 = ['Eigenvalues of a random matrix of dimension '];
 title(t2)
 
 % (U3) Condition number
-End = 50; % 2^10 , begin with 4
+End = 30; % 2^10 , begin with 4
 Start = 1;
 AU3 = zeros(End-Start+1, 100); % store the 2 norm of 100 matrices with various dimension
 for i=Start:1:End
